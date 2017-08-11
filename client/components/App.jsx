@@ -7,10 +7,6 @@ var RedocBox = React.createClass({
                 Redoc.init('http://petstore.swagger.io/v2/swagger.json');
           },
 
-          componentWillUnmount: function() {
-            this.el.somePlugin('destroy');
-          },
-
           render: function() {
             return <div ref={el => this.el = el} />;
           }
